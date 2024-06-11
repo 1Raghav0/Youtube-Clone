@@ -1,0 +1,158 @@
+.video-grid {
+    font-family: Roboto, Arial;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:751px) and (max-width:999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+@media (min-width: 1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+
+
+.channel {
+    margin-top: 5px;
+    width: 36px;
+    border-radius: 50px;
+
+}
+
+.channel-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.channel-icon {
+    position: relative;
+}
+
+.channel-icon .tooltips {
+    position: absolute;
+    left: 0px;
+    bottom: -78px;
+    font-size: 10px;
+    background-color: whitesmoke;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity(0.15s);
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: 1px 1px 1px rgb(188, 184, 184);
+    transition: all;
+
+}
+
+.channel-icon:hover .tooltips {
+    opacity: 1;
+}
+
+.author-hover {
+    padding-top: 10px;
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.achieves {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(167, 167, 167);
+}
+
+.thumbnail-row {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%;
+
+
+}
+
+.video-time {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 8px;
+    right: 5px;
+}
+
+.video-info {
+    margin-left: 4px;
+}
+
+.video-title {
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 10px;
+
+}
+
+.video-author {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: grey;
+    margin-left: 4px;
+}
+
+.video-stats {
+    font-size: 12px;
+    margin-top: 0;
+    color: grey;
+    margin-left: 4px;
+}
+
+/* .thumbnail2 {
+    width: 300px;
+
+} */
+/* .channel1{
+    margin-top: 5px;
+    width: 36px;
+    border-radius: 50px;
+    display: inline-block;
+}
+.inner-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+} */
